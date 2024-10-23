@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thumbnail Rater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Two Thumbnails</h1>
+        <div class="upload-section">
+            <input type="file" id="image1" accept="image/*">
+            <input type="file" id="image2" accept="image/*">
+        </div>
+        <select id="sortOptions">
+            <option value="highest">Highest Rating</option>
+            <option value="recent">Most Recent</option>
+        </select>
+        <button id="rateButton">Rate Thumbnails</button>
+        <button id="clearButton">Clear</button>
+        <div id="result"></div>
+        <div id="leaderboard">
+            <h2>Leaderboard</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
